@@ -10,10 +10,7 @@ para el solido:
     mpirun -np 2 lmp_mpi < in_s.LJ
 .
 
-    tail -100 LJ_T0.5.rdf > LJSolid_c.dat
-.
-
-    awk '{print $2, $3}' LJSolid_c.dat > RDFSolid.dat
+    tail -100 LJ_T0.5.rdf | awk '{print $2, $3}' > RDFSolid.dat
 .
 
     xmgrace -display :0 RDF_solid.dat
@@ -23,10 +20,7 @@ para el liquido:
     lmp_mpi < in_l.LJ
 .
 
-    tail -100 LJ_T4.rdf > LJLiquid_c.dat
-.
-
-    awk '{print $2, $3}' LJLiquid_c.dat > RDFLiquid.dat
+    tail -100 LJ_T4.rdf | awk '{print $2, $3}' > RDFLiquid.dat
 .
 
     xmgrace -display :0 RDFLiquid.dat
@@ -36,10 +30,7 @@ para el gas:
     mpirun -np 2 lmp_mpi < in_g.LJ
 .
 
-    tail -100 LJ_T10.rdf > LJGas_c.dat
-.
-
-    awk '{print $2, $3}' LJGas_c.dat > RDFGas.dat
+    tail -100 LJ_T10.rdf | awk '{print $2, $3}' > RDFGas.dat
 .
 
     xmgrace -display :0 RDFGas.dat 
