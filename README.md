@@ -8,7 +8,7 @@ Comandos para su ejecucion en la terminal:
 para el solido:
 
     mpirun -np 2 lmp_mpi < in_s.LJ
-
+.
 
     tail -100 LJ_T0.5.rdf > LJSolid_c.dat
 
