@@ -20,7 +20,7 @@ tail -100 LJ_T0.5.rdf > LJSolid_c.dat
 awk '{print $2, $3}' LJSolid_c.dat > RDFSolid.dat
 
 4. Elaborar la gráfica en xmgrace usando:
-xmgrace -display :0 RDF_solid.dat
+xmgrace -display :0 RDFSolid.dat
 
 5. Modificar el archivo de entrada in.LJ en la linea 1 y 11, cambiando la Temperatura a 4.0 y el archivo donde se guardarán los datos de RDF a LJLiquid.dat
 
