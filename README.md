@@ -1,5 +1,5 @@
 # lammps_e1
-Instructivo, archivos de entrada y log's de la simulación del ejemplo 1,
+Instructivo, archivos de entrada y log's de la simulación del ejercicio 1,
 
 Comandos para la ejecucion en terminal:
 
